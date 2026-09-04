@@ -41,4 +41,48 @@ divisor = 5
 restultado = numero % divisor
 resto = resultado 
 print("O resto da divisao é ,", resto)
-print("ESTOU NO EXERCÍCIO 07")
+#aula 4 - Comparaçções exercicio 08
+idade = 29
+print(idade > 18,
+      idade == 29,
+      idade < 18)
+# exercicio 09
+idade = 29
+if idade >= 18:
+    print("É maior de idade")
+# exercicio 10
+idade = 16 
+if idade >= 18:
+    print("É maior de idade")
+else:
+    print("Menor de idade ")
+# exercicio 11
+nota = 7
+if nota >= 7:
+    print("Aprovado")
+else:
+    print("Reprovado")
+# exercicio 12
+nota = 6
+if nota >= 7:
+    print("Aprovado")
+elif nota >= 5 and nota <= 6.9:
+    print("Recuperação")
+else:
+    print("Reprovado")
+# exercicio 13
+idade = 29
+if idade <= 12:
+    print("Criança")
+elif idade >= 13 and idade <= 17:
+    print("Adolescente")
+elif idade >= 18 and idade <= 59:
+    print("Adulto")
+else:
+    print("Idoso")
+#aula 6 - or exercicio 14 entrada permitida
+idade = 13
+if idade <= 12 or idade >= 60:
+    print("Faixa prioritaria")
+else:
+    print("Faixa comum")
