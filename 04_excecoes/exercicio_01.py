@@ -9,4 +9,4 @@ def produtos_promocao(produtos):
     for produto in produtos:
         if produto["preco"] > 100:
             nova_lista.append(produto)
-    print (nova_lista)
+    return nova_lista

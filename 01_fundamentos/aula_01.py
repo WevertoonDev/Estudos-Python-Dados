@@ -41,3 +41,4 @@ divisor = 5
 restultado = numero % divisor
 resto = resultado 
 print("O resto da divisao é ,", resto)
+print("ESTOU NO EXERCÍCIO 07")
