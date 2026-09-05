@@ -119,5 +119,83 @@ while contador > 1:
     contador = contador - 1
     print(contador)
 print("Fim!")
-    
-   
+
+#exeercicio 18 while +acumulador
+acumulador = 0
+contador = 0
+while contador < 5:
+    contador = contador + 1
+    acumulador = acumulador + contador
+print(acumulador)
+
+# exercicio 19 -contar de 1 ate 10
+contador = 0
+while contador < 10:
+    contador = contador +  1
+    print(contador)
+
+# exercicio 20 - soma ate 10
+soma = 0
+contador = 0
+while contador < 10:
+    contador = contador + 1
+    soma = soma + contador
+print(soma)
+
+# aula 8 - for - pratica 1
+for numero in range(1,11):
+    print(numero)
+
+# aula 8 - for - pratica 2
+for numero in range(2, 11, 2):
+    print(numero)
+
+# exercicio 21 - soma com for
+soma = 0 
+contador = 0
+for contador in range(1, 11):
+    soma = soma + contador 
+print(soma)
+
+# exercicio 22 - um pequeno desafio
+for numero in range(1,11,2):
+    print(numero)
+
+# exercicio 23 - tabuada
+soma = 0
+for soma in range(1,11):
+    print(soma * 5)
+
+# exercicio 24 - tabuada escolhida 
+for tabuada in range(1,11):
+    print(tabuada * 7)
+print("fim da tabuada do 7")
+
+#exercicio 25 - for dentro de for
+for tabuada in range(1,6):
+    for numero in range(1,11):
+        print(tabuada * numero)
+
+# aula 9 - lista -pratica 1
+animais = ["cachorro", "gato", "leão"]
+print(animais[1])
+
+#pratica 2
+notas = [7, 8, 9, 10]
+print(notas[2])
+
+#pratica 3
+frutas = ["maçã", "banana", "laranja"]
+frutas[1] = "uva"
+print(frutas[1])
+
+#pratica 4 
+frutas = ["maçã", "banana", "laranja", "uva"]
+for fruta in frutas:
+    print(fruta)
+
+#pratica 5
+frutas = ["maçã", "banana"]
+frutas.append("laranja"),
+frutas.append("uva")
+print(frutas)
