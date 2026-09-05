@@ -224,3 +224,13 @@ notas = [5, 6, 7, 8]
 for i in range(len(notas)):
     notas[i] = notas[i] + 1
 print(notas)
+
+#pratica 10 - finalizacao
+notas = [5, 6, 7, 8]
+for i in range(len(notas)):
+    notas[i] = notas[i] + 2
+print(notas)
+#pratica
+numeros = [10, 20, 30, 40]
+numeros.remove(30)
+print(numeros)
