@@ -199,3 +199,28 @@ frutas = ["maçã", "banana"]
 frutas.append("laranja"),
 frutas.append("uva")
 print(frutas)
+
+#pratica 6
+notas = [7, 8, 9, 10, 6]
+print(len(notas))
+
+#pratica 7 
+notas = [7, 8, 9, 10, 6]
+for i in range(len(notas)):
+    print(notas[i])
+
+#pratica 8 
+frutas = ["maçã", "banana", "laranja", "uva"]
+for i in range(len(frutas)):
+    print(i, frutas[i])
+
+#pratica 9
+notas = [7, 5, 9, 6, 10]
+for i in range(len(notas)):
+    print(i, notas[i])
+
+#pratica 10 
+notas = [5, 6, 7, 8]
+for i in range(len(notas)):
+    notas[i] = notas[i] + 1
+print(notas)
