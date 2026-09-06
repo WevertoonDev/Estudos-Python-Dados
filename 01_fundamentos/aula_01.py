@@ -264,10 +264,54 @@ for nota in notas:
         aprovado = aprovado + 1
 print(aprovado)
 
-#pratica 15 maior nota
+#pratica 16 maior nota
 notas = [5, 8, 7, 4, 10, 6]
 maior = 0
 for nota in notas:
     if nota > maior:
         maior = nota
 print(maior)
+
+#pratica 17 
+notas = [-5, -2, -8, -1]
+maior = notas[0]
+for nota in notas:
+    if nota > maior :
+        maior = nota 
+print(maior)
+
+#pratica 18 media da notas
+notas = [6, 8, 7, 9, 10]
+soma = 0
+for nota in notas:
+    soma = soma + nota
+media = soma /len(notas)
+print(soma,media)
+
+#pratica 19 - contar notas acima da media 
+notas = [5, 8, 7, 4, 10, 6]
+soma = 0 
+media = 0
+qtd = 0 
+for nota in notas:
+    soma = soma + nota
+media = soma /len(notas)
+for nota in notas:
+    if nota > media:
+            qtd = qtd + 1
+print(qtd)
+
+#pratica 20 maior menor e media 
+notas = [5, 8, 7, 4, 10, 6]
+maior = notas[0]
+menor = notas[0]
+soma = 0
+for nota in notas:
+    soma = soma + nota
+media = soma /len(notas)
+for nota in notas:
+    if nota > maior:
+        maior = nota
+    if nota < menor:
+        menor = nota 
+print(menor, media, maior)
