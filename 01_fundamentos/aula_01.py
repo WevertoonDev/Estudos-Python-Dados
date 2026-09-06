@@ -184,7 +184,7 @@ print(animais[1])
 notas = [7, 8, 9, 10]
 print(notas[2])
 
-#pratica 3
+#pratica 3 trocar
 frutas = ["maçã", "banana", "laranja"]
 frutas[1] = "uva"
 print(frutas[1])
@@ -230,7 +230,44 @@ notas = [5, 6, 7, 8]
 for i in range(len(notas)):
     notas[i] = notas[i] + 2
 print(notas)
+
 #pratica
 numeros = [10, 20, 30, 40]
 numeros.remove(30)
 print(numeros)
+
+#pratica 12 
+compras = ["arroz", "feijão", "café"]
+compras.append("leite")
+compras.remove("arroz")
+compras[0] = "macarrão"
+print(compras)
+
+#pratica 13 encontrando uma informarção na lista 
+notas = [5, 8, 7, 10, 6]
+soma = 0
+for nota in notas:
+    soma = soma + nota
+print(soma)
+
+#pratica 14 encontrar notas aprovados
+notas = [5, 8, 7, 4, 10, 6]
+for nota in notas:
+    if nota >= 7:
+        print(nota)
+
+#pratica 15 contar aprovados
+notas = [5, 8, 7, 4, 10, 6]
+aprovado = 0
+for nota in notas:
+    if nota >= 7:
+        aprovado = aprovado + 1
+print(aprovado)
+
+#pratica 15 maior nota
+notas = [5, 8, 7, 4, 10, 6]
+maior = 0
+for nota in notas:
+    if nota > maior:
+        maior = nota
+print(maior)
