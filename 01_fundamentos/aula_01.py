@@ -315,3 +315,56 @@ for nota in notas:
     if nota < menor:
         menor = nota 
 print(menor, media, maior)
+
+#pratica 21 - notas aprovadas e media
+notas = [5, 8, 7, 4, 10, 6, 9, 3]
+maior = notas[0]
+menor = notas[0]
+qtd_media = 0 
+soma = 0
+for nota in notas:
+    if nota > maior:
+        maior = nota
+    if nota < menor:
+        menor = nota
+    soma = soma + nota
+media = soma /len(notas)
+for nota in notas:
+    if nota >= media:
+        qtd_media = qtd_media + 1
+print(menor, media, qtd_media, maior)
+
+#pratica 22 - contar positivo e negativo
+numeros = [5, -2, 8, -7, 10, -3, 4, -1]
+positivo = 0
+negativo = 0
+for numero in numeros:
+    if numero > 0:
+        positivo = positivo + 1
+    if numero < 0:
+        negativo = negativo + 1
+print(positivo, negativo)
+
+#pratica 23 separar numeros pares e impares
+numeros = [12, 7, 5, 8, 3, 10, 15, 2]
+pares = 0
+imapares = 0
+for numero in numeros:
+    if numero % 2==0:
+        pares = pares + 1
+    if numero % 2 == 1:
+        imapares = imapares + 1
+print(pares, imapares)
+
+#pratica 24 encontrar numeros acima da media 
+numeros = [10, 5, 8, 3, 12, 7, 15, 4]
+acima_media = 0
+soma = 0 
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for numero in numeros:
+    if numero > media:
+        acima_media = numero
+        print(acima_media)
+    
