@@ -367,4 +367,71 @@ for numero in numeros:
     if numero > media:
         acima_media = numero
         print(acima_media)
-    
+
+#pratica 25 somar apenas os numeros pares 
+numeros = [4, 7, 10, 3, 8, 5, 12, 1]
+par = 0
+for numero in numeros:
+    if numero % 2 == 0:
+        par = par + numero
+print(par)
+
+#pratica 26 somar apenas os numeros impares 
+numeros = [3, 8, 11, 6, 7, 10, 15, 4]
+impar = 0
+for numero in numeros:
+    if numero % 2 == 1:
+        impar = impar + numero
+print(impar)
+
+#pratica 27 agora quero te pegar 
+numeros = [5, -2, 8, -7, 10, -3, 4, -1, 12]
+positivo = 0
+negativo = 0
+qtd_p = 0
+qtd_n = 0
+for numero in numeros:
+    if numero > 0:
+        positivo = positivo + numero
+        qtd_p = qtd_p + 1
+    if numero < 0:
+        negativo = negativo + numero
+        qtd_n = qtd_n +1 
+print(positivo, negativo, qtd_p, qtd_n)
+
+#pratica 28 o desafio do campeao kkk
+numeros = [12, 5, 27, 8, 19, 3, 31, 14]
+maior = numeros[0]
+menor = numeros[0]
+soma = 0
+for numero in numeros:
+    soma = soma +numero
+    if numero > maior:
+        maior = numero
+    if numero < menor:
+        menor = numero
+media = soma / len(numeros)
+print(menor, media, maior, soma )
+
+#pratica 29 enocntrar um numero especifico
+numeros = [12, 5, 27, 8, 19, 3, 31, 14]
+alvo = 100
+encontrou = False
+for numero in numeros:
+    if numero == alvo:
+        encontrou = True
+if encontrou:
+    print("Encontrado")
+else:
+    print("Não encontrado!")
+
+#pratica 30 procurar e contar 
+numeros = [5, 8, 5, 10, 5, 3, 8, 5]
+alvo = 5
+qtd = 0
+for numero in numeros:
+    if numero == alvo:
+        qtd = qtd + 1
+print("o numero 5 aparece,",qtd)
+
+#
