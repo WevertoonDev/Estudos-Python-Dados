@@ -568,3 +568,62 @@ for i in range(len(numeros)):
     if numeros[i] % 2 == 1:
         impar = impar +1
 print(maior, p_maior, menor, p_menor, par, impar)
+
+#pratica 41 soma dos pares  e dos impares
+numeros = [4, 7, 10, 3, 8, 5, 12, 1, 6]
+par = 0 
+impar = 0
+qtd_par = 0
+qtd_impar = 0
+for numero in numeros:
+    if numero % 2 == 0:
+        par = par + numero
+        qtd_par = qtd_par + 1
+    if numero % 2 == 1:
+        impar = impar + numero
+        qtd_impar = qtd_impar + 1
+print(par, qtd_par, impar, qtd_impar)
+
+#pratica 42 encotrar numeros acima e abaixo da media 
+numeros = [12, 5, 18, 7, 20, 3, 10, 15]
+soma = 0
+acima_media = 0
+abaixo_media = 0
+soma_media = 0
+soma_abaixo = 0
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for numero in numeros:
+    if numero > media:
+        acima_media = acima_media + 1
+        soma_media = soma_media + numero
+    if numero < media:
+        abaixo_media = abaixo_media + 1
+        soma_abaixo = soma_abaixo + numero
+print(media, acima_media, abaixo_media, soma_media, soma_abaixo)
+
+#pratica 43 maior e menor acima da media 
+numeros = [10, 5, 18, 7, 20, 3, 15, 12, 25, 8]
+soma = 0 
+maior_media = numeros[0]
+p_maior = 0
+menor_media = None
+p_menor = 0
+qtd = 0
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for i in range(len(numeros)):
+    if numeros[i] > media:
+        qtd = qtd + 1
+        if numeros[i] > maior_media:
+            maior_media = numeros[i]
+            p_maior = i
+        if menor_media is None:
+            menor_media = numeros[i]
+            p_menor = i
+        elif numeros[i] < menor_media:
+            menor_media = numeros[i]
+            p_menor = i
+print(media, maior_media, p_maior, menor_media, p_menor, qtd)
