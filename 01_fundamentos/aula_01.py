@@ -460,3 +460,54 @@ for numero in numeros:
 for i in range(len(numeros)):
     if numeros[i] == maior:
         print(i, maior)
+
+#pratica 34 maior numero e quantidade de vezes 
+numeros = [7, 12, 5, 12, 3, 12, 8, 10]
+maior = numeros[0]
+qtd = 0
+for numero in numeros:
+    if numero > maior:
+        maior = numero
+for i in range(len(numeros)):
+    if numeros[i] == maior:
+        qtd = qtd + 1
+print(qtd,maior)
+
+#pratica 35 segundo maior numero
+numeros = [12, 5, 27, 8, 19, 31, 14, 22]
+maior = numeros[0]
+segundo = numeros[0]
+for numero in numeros:
+    if numero > maior:
+        segundo = maior
+        maior = numero
+    elif numero > segundo:
+        segundo = numero
+print(maior,segundo)
+
+#pratica 36 maior e menor sem repetir for 
+numeros = [15, 3, 27, 8, 19, 31, 6, 22]
+maior = numeros[0]
+menor = numeros[0]
+p_maior = 0
+p_menor = 0
+for i in range(len(numeros)):
+    if numeros[i] > maior:
+        maior = numeros[i]
+        p_maior = i
+    if numeros[i] < menor:
+        menor = numeros[i]
+        p_menor = i
+print(p_menor, menor, p_maior, maior)
+
+#pratica 37 soma a e posiçao
+numeros = [10, 4, 7, 15, 3, 12, 8]
+soma = 0
+posicao = 0
+maior = numeros[0]
+for i in range(len(numeros)):
+    soma = soma + numeros[i]
+    if numeros[i] > maior:
+        maior = numeros[i]
+        posicao = i
+print("a soma de todos sao:", soma,",o maior é", maior,"e a posicao é", posicao)
