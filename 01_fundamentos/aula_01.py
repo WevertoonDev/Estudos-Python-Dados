@@ -627,3 +627,48 @@ for i in range(len(numeros)):
             menor_media = numeros[i]
             p_menor = i
 print(media, maior_media, p_maior, menor_media, p_menor, qtd)
+
+#pratica 44 grupo filtado + none
+numeros = [7, 22, 4, 18, 31, 9, 25, 12, 3]
+maior_par = 0
+p_par = 0
+menor_par = None
+m_par = 0
+qtd = 0
+for i in range(len(numeros)):
+    if numeros[i] % 2 == 0:
+        qtd = qtd +1
+        if numeros[i] > maior_par:
+            maior_par = numeros[i]
+            p_par = i
+        if menor_par is None:
+            menor_par = numeros[i]
+            m_par = i
+        elif numeros[i] < menor_par:
+            menor_par = numeros[i]
+            m_par = i
+print(maior_par, p_par, menor_par, m_par, qtd)
+
+#pratica  45 maior e menor dos numeros impares
+numeros = [16, 7, 21, 4, 13, 30, 9, 18, 5]
+maior_impar = 0
+p_maior = 0
+menor_impar = None
+p_menor = 0
+qtd = 0 
+soma = 0
+for i in range(len(numeros)):
+    if numeros[i] % 2 == 1:
+        soma = soma + numeros[i]
+        qtd = qtd + 1
+        if numeros[i] > maior_impar:
+            maior_impar = numeros[i]
+            p_maior = i
+        if menor_impar is None:
+            menor_impar = numeros[i]
+            p_menor = i
+        elif numeros[i] < menor_impar:
+            menor_impar = numeros[i]
+            p_menor = i
+print(maior_impar, p_maior, menor_impar,
+      p_menor, soma, qtd)
