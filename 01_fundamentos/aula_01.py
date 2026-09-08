@@ -511,3 +511,39 @@ for i in range(len(numeros)):
         maior = numeros[i]
         posicao = i
 print("a soma de todos sao:", soma,",o maior é", maior,"e a posicao é", posicao)
+
+#pratica 38 maior menor e media 
+numeros = [12, 5, 27, 8, 19, 3, 31, 14]
+maior = numeros[0]
+menor = numeros[0]
+p_menor = 0
+p_maior = 0
+soma = 0
+for i in range(len(numeros)):
+    soma = soma + numeros[i]
+    if numeros[i] > maior:
+        maior = numeros[i]
+        p_maior = i
+    if numeros[i] < menor:
+        menor = numeros[i]
+        p_menor = i
+media = soma /len(numeros)
+print(soma, maior, p_maior, menor, p_menor, media)
+
+#pratica 39 acima da media +posicao
+numeros = [10, 5, 8, 3, 12, 7, 15, 4]
+acima_media = 0
+qtd = 0
+posicao = 0
+soma = 0
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+print(media)
+for i in range(len(numeros)):
+    if numeros[i] > media:
+        acima_media = numeros[i]
+        posicao = i
+        qtd = qtd + 1
+        print("Número:", numeros[i], "| Posição", i)
+print("Quantidade:", qtd)
