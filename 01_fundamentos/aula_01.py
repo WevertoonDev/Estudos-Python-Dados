@@ -434,4 +434,29 @@ for numero in numeros:
         qtd = qtd + 1
 print("o numero 5 aparece,",qtd)
 
-#
+#pratica 31 aora vamos complicar um pouquinho
+numeros = [5, 8, 5, 10, 5, 3, 8, 5]
+alvo = 5
+for i in range(len(numeros)):
+    if numeros[i] == alvo:
+        print(i)
+
+#pratica 32 encotarr posicoes e contar 
+numeros = [5, 8, 5, 10, 5, 3, 8, 5]
+alvo = 5
+qtd = 0
+for i in range(len(numeros)):
+    if numeros[i] == alvo:
+        qtd = qtd + 1
+        print("Posição:", i)
+print("Quantidade:", qtd)
+
+#pratica 33 encontrando o maior numero e a posicao dele 
+numeros = [12, 5, 27, 8, 19, 3, 31, 14]
+maior = numeros[0]
+for numero in numeros:
+    if numero > maior:
+        maior = numero
+for i in range(len(numeros)):
+    if numeros[i] == maior:
+        print(i, maior)
