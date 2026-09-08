@@ -547,3 +547,24 @@ for i in range(len(numeros)):
         qtd = qtd + 1
         print("Número:", numeros[i], "| Posição", i)
 print("Quantidade:", qtd)
+
+#pratica 40 vamos subir mais um nivel 
+numeros = [18, 5, 27, 12, 9, 31, 6, 14, 3]
+maior = numeros[0]
+p_maior = 0
+menor = numeros[0]
+p_menor = 0
+par = 0 
+impar = 0 
+for i in range(len(numeros)):
+    if numeros[i] > maior:
+        maior = numeros[i]
+        p_maior = i
+    if numeros[i] < menor:
+        menor = numeros[i]
+        p_menor = i
+    if numeros[i] % 2 == 0:
+        par = par + 1
+    if numeros[i] % 2 == 1:
+        impar = impar +1
+print(maior, p_maior, menor, p_menor, par, impar)
