@@ -672,3 +672,14 @@ for i in range(len(numeros)):
             p_menor = i
 print(maior_impar, p_maior, menor_impar,
       p_menor, soma, qtd)
+
+#pratica 46 media dos pares
+numeros = [8, 5, 12, 7, 20, 3, 14, 9, 6]
+soma = 0
+qtd = 0 
+for numero in numeros:
+    if numero % 2 == 0:
+        soma = soma + numero
+        qtd = qtd + 1
+media = soma / qtd
+print(soma, qtd, media)
