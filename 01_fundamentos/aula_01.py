@@ -820,3 +820,43 @@ aluno = {
 print(aluno["nome"])
 print(aluno["idade"])
 print(aluno["nota"])
+
+#pratica 52
+aluno = {
+    "nome": "Carlos",
+    "idade": 20,
+    "nota": 8.5
+}
+aluno["idade"] = 21
+aluno["nota"] = 9.0
+print(aluno["idade"], aluno["nota"])
+print(aluno)
+
+#pratcia 53 adicionado uma informacao
+aluno = {
+    "nome": "Carlos",
+    "idade": 21,
+    "nota": 9.0
+}
+aluno["curso"] = "Python"
+print(aluno)
+#pratica 54
+aluno = {
+    "nome": "Carlos",
+    "idade": 21,
+    "nota": 9.0,
+    "curso": "Python"
+}
+del aluno["idade"]
+print(aluno)
+#pratica 55 
+aluno = {
+    "nome": "Carlos",
+    "idade": 20,
+    "nota": 7.5
+}
+aluno["idade"] = 21
+aluno["nota"] = 8.5
+aluno["curso"] = "Python"
+del aluno["idade"]
+print(aluno)
