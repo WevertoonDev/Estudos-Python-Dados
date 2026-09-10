@@ -881,3 +881,69 @@ alunos = {
 for chave in alunos:
     if alunos[chave] >= 7:
         print(chave, alunos[chave])
+
+#pratica 58 dicionario + contador 
+alunos = {
+    "Ana": 8.5,
+    "Carlos": 6.0,
+    "João": 9.0,
+    "Maria": 5.5,
+    "Pedro": 7.5
+}
+soma = 0
+qtd = 0
+for chave in alunos:
+    if alunos[chave] >= 7:
+        qtd = qtd + 1
+        soma = soma + alunos[chave]
+media = soma / qtd
+print(qtd, soma, media)
+
+#pratica 59 dicionario filtro mais maior 
+alunos = {
+    "Ana": 7.5,
+    "Carlos": 8.0,
+    "João": 9.5,
+    "Maria": 6.0,
+    "Pedro": 8.5,
+    "Lucas": 9.0 }
+maior = 0
+qtd = 0
+soma = 0
+nome = ""
+for chave in alunos:
+    if alunos[chave] >= 8:
+        soma = soma + alunos[chave]
+        qtd = qtd + 1
+    if alunos[chave] > maior:
+        maior = alunos[chave]
+        nome = chave
+print(maior, nome, qtd, soma)
+
+#pratica 60 dicionarios + vrias informaçoes
+alunos = {
+    "Ana": 7.0,
+    "Carlos": 5.5,
+    "João": 9.0,
+    "Maria": 8.5,
+    "Pedro": 6.0,
+    "Lucas": 10.0 }
+media = None
+qtd = 0
+soma = 0
+maior = 0
+nome = ""
+menor = 999
+nome_m = ""
+for chave in alunos:
+    soma = soma + alunos[chave]
+    if alunos[chave] >= 7:
+        qtd = qtd + 1
+    if alunos[chave] > maior:
+        maior = alunos[chave]
+        nome = chave
+    if alunos[chave] < menor:
+        menor = alunos[chave]
+        nome_m = chave
+media = soma / len(alunos)
+print(media, qtd, soma, maior, nome, menor, nome_m)
