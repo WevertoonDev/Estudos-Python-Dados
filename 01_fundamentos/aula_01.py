@@ -683,3 +683,26 @@ for numero in numeros:
         qtd = qtd + 1
 media = soma / qtd
 print(soma, qtd, media)
+
+#pratica 47 numeros acima da media 
+numeros = [6, 14, 9, 21, 5, 18, 11, 25, 8]
+soma = 0 
+media = 0
+qtd = 0
+soma_acima = 0
+maior_acima = None
+p_media = None
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for i in range(len(numeros)):
+    if numeros[i] > media:
+        soma_acima = soma_acima + numeros[i]
+        qtd = qtd + 1
+        if maior_acima is None:
+            maior_acima = numeros[i]
+            p_maior = i
+        elif numeros[i] > maior_acima:
+            maior_acima = numeros[i]
+            p_media = i
+print(media, soma_acima, qtd, maior_acima, p_media)
