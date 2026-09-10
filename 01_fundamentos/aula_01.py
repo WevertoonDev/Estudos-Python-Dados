@@ -782,3 +782,41 @@ for i in range(len(numeros)):
             menor_p = numeros[i]
             p_menor = i
 print(media, qtd_par, soma_par, maior_p, p_par, menor_p, p_menor)
+
+#pratica 51 agora quero ver adaptacao
+numeros = [13, 4, 22, 17, 8, 29, 6, 15, 24, 11]
+soma = 0
+media = None
+qtd_acima = 0
+qtd_abaixo = 0
+soma_acima = 0
+soma_abaixo = 0
+maior_abaixo = None
+p_abaixo = None
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for i in range(len(numeros)):
+    if numeros[i] > media:
+        soma_acima = soma_acima + numeros[i]
+        qtd_acima = qtd_acima + 1
+    if numeros[i] < media:
+        soma_abaixo = soma_abaixo + numeros[i]
+        qtd_abaixo = qtd_abaixo + 1
+        if maior_abaixo is None:
+            maior_abaixo = numeros[i]
+            p_abaixo = i
+        elif numeros[i] > maior_abaixo:
+            maior_abaixo = numeros[i]
+            p_abaixo = i
+print(media, qtd_acima, qtd_abaixo, soma_acima, soma_abaixo, maior_abaixo, p_abaixo)
+
+#pratica 51 conceito : Dicionarios
+aluno = {
+    "nome": "Carlos",
+    "idade": 20,
+    "nota": 8.5
+}
+print(aluno["nome"])
+print(aluno["idade"])
+print(aluno["nota"])
