@@ -860,3 +860,24 @@ aluno["nota"] = 8.5
 aluno["curso"] = "Python"
 del aluno["idade"]
 print(aluno)
+
+#pratica 56
+aluno = {
+    "nome": "Ana",
+    "idade": 22,
+    "nota": 9.0,
+    "curso": "Python"
+}
+for chave in aluno:
+    print(chave, aluno[chave])
+
+#pratica 57 agora vamos filtar
+alunos = {
+    "Ana": 8.5,
+    "Carlos": 6.0,
+    "João": 9.0,
+    "Maria": 5.5
+}
+for chave in alunos:
+    if alunos[chave] >= 7:
+        print(chave, alunos[chave])
