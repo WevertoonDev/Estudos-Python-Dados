@@ -701,8 +701,84 @@ for i in range(len(numeros)):
         qtd = qtd + 1
         if maior_acima is None:
             maior_acima = numeros[i]
-            p_maior = i
+            p_media = i
         elif numeros[i] > maior_acima:
             maior_acima = numeros[i]
             p_media = i
 print(media, soma_acima, qtd, maior_acima, p_media)
+
+#pratica 48 nivel acima 
+numeros = [16, 7, 24, 9, 12, 31, 5, 18, 27, 10]
+media = 0
+qtd_acima = 0
+soma = 0
+soma_acima = 0
+maior_media = None
+p_maior = None
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for i in range(len(numeros)):
+    if numeros[i] > media:
+        soma_acima = soma_acima + numeros[i]
+        qtd_acima = qtd_acima + 1
+        if maior_media is None:
+            maior_media = numeros[i]
+            p_maior = i
+        elif numeros[i] > maior_media:
+            maior_media = numeros[i]
+            p_maior = i
+print(media, qtd_acima, soma_acima, maior_media, p_maior)
+
+#pratica 49  vamos subir um pouquinho 
+numeros = [22, 7, 14, 31, 9, 18, 5, 26, 11, 20]
+soma = 0
+qtd = 0
+abaixo_media = None
+soma_abaixo = 0
+menor_media = None
+p_media = None
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for i in range(len(numeros)):
+    if numeros[i] < media:
+        soma_abaixo = soma_abaixo + numeros[i]
+        qtd = qtd + 1
+        if menor_media is None:
+            menor_media = numeros[i]
+            p_media = i
+        elif numeros[i] < menor_media:
+            menor_media = numeros[i]
+            p_media = i
+print(media, qtd, soma_abaixo, menor_media, p_media)
+
+#pratica 50 fechando um bloco importante 
+numeros = [15, 8, 23, 4, 18, 31, 7, 12, 26, 9, 20]
+soma = 0 
+qtd_par = 0
+soma_par = 0
+maior_p = None
+p_par = None
+menor_p = None
+p_menor = None
+for numero in numeros:
+    soma = soma + numero
+media = soma / len(numeros)
+for i in range(len(numeros)):
+    if numeros[i] % 2 == 0:
+        soma_par = soma_par + numeros[i]
+        qtd_par = qtd_par + 1
+        if maior_p is None:
+            maior_p = numeros[i]
+            p_par = i
+        elif numeros[i] > maior_p:
+            maior_p = numeros[i]
+            p_par = i
+        if menor_p is None:
+            menor_p = numeros[i]
+            p_menor = i
+        elif numeros[i] < menor_p:
+            menor_p = numeros[i]
+            p_menor = i
+print(media, qtd_par, soma_par, maior_p, p_par, menor_p, p_menor)
