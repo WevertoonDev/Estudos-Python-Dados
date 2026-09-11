@@ -947,3 +947,39 @@ for chave in alunos:
         nome_m = chave
 media = soma / len(alunos)
 print(media, qtd, soma, maior, nome, menor, nome_m)
+
+#pratica 61 dicionario mais classificação
+alunos = {
+    "Ana": 8.5,
+    "Carlos": 5.0,
+    "João": 7.0,
+    "Maria": 9.5,
+    "Pedro": 6.5,
+    "Lucas": 4.0 }
+for chave in alunos:
+    if alunos[chave] >= 7:
+        print(chave, "Aprovado(a)")
+    elif alunos[chave] >= 5 and alunos[chave] < 7:
+        print(chave, "Recuperação")
+    else:
+        print(chave, "Reprovado")
+
+#pratica 62 classificação + contagem
+alunos = {
+    "Ana": 8.5,
+    "Carlos": 5.0,
+    "João": 7.0,
+    "Maria": 9.5,
+    "Pedro": 6.5,
+    "Lucas": 4.0 }
+aprovados = 0
+recuperacao = 0
+reprovados = 0
+for chave in alunos:
+    if alunos[chave] >= 7:
+        aprovados = aprovados + 1
+    elif alunos[chave] >= 5:
+        recuperacao = recuperacao + 1
+    else:
+        reprovados = reprovados + 1
+print("Aprovados:",aprovados,"Recuperacao:", recuperacao, "Reprovados:", reprovados)
