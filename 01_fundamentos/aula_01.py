@@ -1006,3 +1006,69 @@ for chave in alunos:
         reprovados = reprovados + 1
 media = soma_a / aprovados
 print(aprovados, recuperacao, reprovados, soma_a, media)
+
+#pratica dicionarios + logicas
+produtos = {
+    "Arroz": 25.0,
+    "Feijão": 8.5,
+    "Café": 18.0,
+    "Leite": 6.0,
+    "Açúcar": 5.5,
+    "Macarrão": 7.0 }
+qtd = 0
+soma = 0
+mais_c = 0
+nome = None
+menor = None
+nome_m = None
+for chave in produtos:
+    if produtos[chave] > 10:
+        qtd = qtd + 1
+        soma = soma + produtos[chave]
+    if produtos[chave] > mais_c:
+        mais_c = produtos[chave]
+        nome = chave
+    if menor is None:
+        menor = produtos[chave]
+        nome_m = chave
+    elif produtos[chave] < menor:
+        menor = produtos[chave]
+        nome_m = chave
+print(qtd, soma, mais_c, nome, menor, nome_m)
+
+#pratica 65 dicionario + logica 
+vendas = {
+    "Ana": 1200.0,
+    "Carlos": 800.0,
+    "João": 1500.0,
+    "Maria": 600.0,
+    "Pedro": 1100.0,
+    "Lucas": 450.0 }
+total = 0
+media = 0
+acima_media = 0
+maior = None
+nome = None
+menor = None
+nome_m = None
+soma_a = 0
+for chave in vendas:
+    total = total + vendas[chave]
+media = total / len(vendas)
+for chave in vendas:
+    if vendas[chave] > media:
+        soma_a = soma_a + vendas[chave]
+        acima_media = acima_media + 1
+    if maior is None:
+        maior = vendas[chave]
+        nome = chave
+    elif vendas[chave] > maior:
+        maior = vendas[chave]
+        nome = chave
+    if menor is None:
+        menor = vendas[chave]
+        nome_m = chave
+    elif vendas[chave] < menor:
+        menor = vendas[chave]
+        nome_m = chave
+print(total, media, acima_media, maior, nome, menor, nome_m, soma_a)
