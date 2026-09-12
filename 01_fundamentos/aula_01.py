@@ -225,38 +225,38 @@ for i in range(len(notas)):
     notas[i] = notas[i] + 1
 print(notas)
 
-#pratica 10 - finalizacao
+#pratica 11 - finalizacao
 notas = [5, 6, 7, 8]
 for i in range(len(notas)):
     notas[i] = notas[i] + 2
 print(notas)
 
-#pratica
+#pratica 12
 numeros = [10, 20, 30, 40]
 numeros.remove(30)
 print(numeros)
 
-#pratica 12 
+#pratica 13 
 compras = ["arroz", "feijão", "café"]
 compras.append("leite")
 compras.remove("arroz")
 compras[0] = "macarrão"
 print(compras)
 
-#pratica 13 encontrando uma informarção na lista 
+#pratica 14 encontrando uma informarção na lista 
 notas = [5, 8, 7, 10, 6]
 soma = 0
 for nota in notas:
     soma = soma + nota
 print(soma)
 
-#pratica 14 encontrar notas aprovados
+#pratica 15 encontrar notas aprovados
 notas = [5, 8, 7, 4, 10, 6]
 for nota in notas:
     if nota >= 7:
         print(nota)
 
-#pratica 15 contar aprovados
+#pratica 16 contar aprovados
 notas = [5, 8, 7, 4, 10, 6]
 aprovado = 0
 for nota in notas:
@@ -264,7 +264,7 @@ for nota in notas:
         aprovado = aprovado + 1
 print(aprovado)
 
-#pratica 16 maior nota
+#pratica 17 maior nota
 notas = [5, 8, 7, 4, 10, 6]
 maior = 0
 for nota in notas:
@@ -272,7 +272,7 @@ for nota in notas:
         maior = nota
 print(maior)
 
-#pratica 17 
+#pratica 18
 notas = [-5, -2, -8, -1]
 maior = notas[0]
 for nota in notas:
@@ -280,7 +280,7 @@ for nota in notas:
         maior = nota 
 print(maior)
 
-#pratica 18 media da notas
+#pratica 19 media da notas
 notas = [6, 8, 7, 9, 10]
 soma = 0
 for nota in notas:
@@ -288,7 +288,7 @@ for nota in notas:
 media = soma /len(notas)
 print(soma,media)
 
-#pratica 19 - contar notas acima da media 
+#pratica 20 - contar notas acima da media 
 notas = [5, 8, 7, 4, 10, 6]
 soma = 0 
 media = 0
@@ -301,7 +301,7 @@ for nota in notas:
             qtd = qtd + 1
 print(qtd)
 
-#pratica 20 maior menor e media 
+#pratica 21 maior menor e media 
 notas = [5, 8, 7, 4, 10, 6]
 maior = notas[0]
 menor = notas[0]
@@ -316,7 +316,7 @@ for nota in notas:
         menor = nota 
 print(menor, media, maior)
 
-#pratica 21 - notas aprovadas e media
+#pratica 22 - notas aprovadas e media
 notas = [5, 8, 7, 4, 10, 6, 9, 3]
 maior = notas[0]
 menor = notas[0]
@@ -334,7 +334,7 @@ for nota in notas:
         qtd_media = qtd_media + 1
 print(menor, media, qtd_media, maior)
 
-#pratica 22 - contar positivo e negativo
+#pratica 23 - contar positivo e negativo
 numeros = [5, -2, 8, -7, 10, -3, 4, -1]
 positivo = 0
 negativo = 0
@@ -345,7 +345,7 @@ for numero in numeros:
         negativo = negativo + 1
 print(positivo, negativo)
 
-#pratica 23 separar numeros pares e impares
+#pratica 24 separar numeros pares e impares
 numeros = [12, 7, 5, 8, 3, 10, 15, 2]
 pares = 0
 imapares = 0
@@ -356,7 +356,7 @@ for numero in numeros:
         imapares = imapares + 1
 print(pares, imapares)
 
-#pratica 24 encontrar numeros acima da media 
+#pratica 25 encontrar numeros acima da media 
 numeros = [10, 5, 8, 3, 12, 7, 15, 4]
 acima_media = 0
 soma = 0 
@@ -368,7 +368,7 @@ for numero in numeros:
         acima_media = numero
         print(acima_media)
 
-#pratica 25 somar apenas os numeros pares 
+#pratica 26 somar apenas os numeros pares 
 numeros = [4, 7, 10, 3, 8, 5, 12, 1]
 par = 0
 for numero in numeros:
@@ -376,7 +376,7 @@ for numero in numeros:
         par = par + numero
 print(par)
 
-#pratica 26 somar apenas os numeros impares 
+#pratica 27 somar apenas os numeros impares 
 numeros = [3, 8, 11, 6, 7, 10, 15, 4]
 impar = 0
 for numero in numeros:
@@ -384,7 +384,7 @@ for numero in numeros:
         impar = impar + numero
 print(impar)
 
-#pratica 27 agora quero te pegar 
+#pratica 28 agora quero te pegar 
 numeros = [5, -2, 8, -7, 10, -3, 4, -1, 12]
 positivo = 0
 negativo = 0
@@ -399,7 +399,7 @@ for numero in numeros:
         qtd_n = qtd_n +1 
 print(positivo, negativo, qtd_p, qtd_n)
 
-#pratica 28 o desafio do campeao kkk
+#pratica 29 o desafio do campeao kkk
 numeros = [12, 5, 27, 8, 19, 3, 31, 14]
 maior = numeros[0]
 menor = numeros[0]
@@ -413,7 +413,7 @@ for numero in numeros:
 media = soma / len(numeros)
 print(menor, media, maior, soma )
 
-#pratica 29 enocntrar um numero especifico
+#pratica 30 enocntrar um numero especifico
 numeros = [12, 5, 27, 8, 19, 3, 31, 14]
 alvo = 100
 encontrou = False
@@ -425,7 +425,7 @@ if encontrou:
 else:
     print("Não encontrado!")
 
-#pratica 30 procurar e contar 
+#pratica 31 procurar e contar 
 numeros = [5, 8, 5, 10, 5, 3, 8, 5]
 alvo = 5
 qtd = 0
@@ -434,14 +434,14 @@ for numero in numeros:
         qtd = qtd + 1
 print("o numero 5 aparece,",qtd)
 
-#pratica 31 aora vamos complicar um pouquinho
+#pratica 32 aora vamos complicar um pouquinho
 numeros = [5, 8, 5, 10, 5, 3, 8, 5]
 alvo = 5
 for i in range(len(numeros)):
     if numeros[i] == alvo:
         print(i)
 
-#pratica 32 encotarr posicoes e contar 
+#pratica 33 encotarr posicoes e contar 
 numeros = [5, 8, 5, 10, 5, 3, 8, 5]
 alvo = 5
 qtd = 0
@@ -451,7 +451,7 @@ for i in range(len(numeros)):
         print("Posição:", i)
 print("Quantidade:", qtd)
 
-#pratica 33 encontrando o maior numero e a posicao dele 
+#pratica 34 encontrando o maior numero e a posicao dele 
 numeros = [12, 5, 27, 8, 19, 3, 31, 14]
 maior = numeros[0]
 for numero in numeros:
@@ -461,7 +461,7 @@ for i in range(len(numeros)):
     if numeros[i] == maior:
         print(i, maior)
 
-#pratica 34 maior numero e quantidade de vezes 
+#pratica 35 maior numero e quantidade de vezes 
 numeros = [7, 12, 5, 12, 3, 12, 8, 10]
 maior = numeros[0]
 qtd = 0
@@ -473,7 +473,7 @@ for i in range(len(numeros)):
         qtd = qtd + 1
 print(qtd,maior)
 
-#pratica 35 segundo maior numero
+#pratica 36 segundo maior numero
 numeros = [12, 5, 27, 8, 19, 31, 14, 22]
 maior = numeros[0]
 segundo = numeros[0]
@@ -485,7 +485,7 @@ for numero in numeros:
         segundo = numero
 print(maior,segundo)
 
-#pratica 36 maior e menor sem repetir for 
+#pratica 37 maior e menor sem repetir for 
 numeros = [15, 3, 27, 8, 19, 31, 6, 22]
 maior = numeros[0]
 menor = numeros[0]
@@ -500,7 +500,7 @@ for i in range(len(numeros)):
         p_menor = i
 print(p_menor, menor, p_maior, maior)
 
-#pratica 37 soma a e posiçao
+#pratica 38 soma a e posiçao
 numeros = [10, 4, 7, 15, 3, 12, 8]
 soma = 0
 posicao = 0
@@ -512,7 +512,7 @@ for i in range(len(numeros)):
         posicao = i
 print("a soma de todos sao:", soma,",o maior é", maior,"e a posicao é", posicao)
 
-#pratica 38 maior menor e media 
+#pratica 39 maior menor e media 
 numeros = [12, 5, 27, 8, 19, 3, 31, 14]
 maior = numeros[0]
 menor = numeros[0]
@@ -530,7 +530,7 @@ for i in range(len(numeros)):
 media = soma /len(numeros)
 print(soma, maior, p_maior, menor, p_menor, media)
 
-#pratica 39 acima da media +posicao
+#pratica 40 acima da media +posicao
 numeros = [10, 5, 8, 3, 12, 7, 15, 4]
 acima_media = 0
 qtd = 0
@@ -548,7 +548,7 @@ for i in range(len(numeros)):
         print("Número:", numeros[i], "| Posição", i)
 print("Quantidade:", qtd)
 
-#pratica 40 vamos subir mais um nivel 
+#pratica 41 vamos subir mais um nivel 
 numeros = [18, 5, 27, 12, 9, 31, 6, 14, 3]
 maior = numeros[0]
 p_maior = 0
@@ -569,7 +569,7 @@ for i in range(len(numeros)):
         impar = impar +1
 print(maior, p_maior, menor, p_menor, par, impar)
 
-#pratica 41 soma dos pares  e dos impares
+#pratica 42 soma dos pares  e dos impares
 numeros = [4, 7, 10, 3, 8, 5, 12, 1, 6]
 par = 0 
 impar = 0
@@ -584,7 +584,7 @@ for numero in numeros:
         qtd_impar = qtd_impar + 1
 print(par, qtd_par, impar, qtd_impar)
 
-#pratica 42 encotrar numeros acima e abaixo da media 
+#pratica 43 encotrar numeros acima e abaixo da media 
 numeros = [12, 5, 18, 7, 20, 3, 10, 15]
 soma = 0
 acima_media = 0
@@ -603,7 +603,7 @@ for numero in numeros:
         soma_abaixo = soma_abaixo + numero
 print(media, acima_media, abaixo_media, soma_media, soma_abaixo)
 
-#pratica 43 maior e menor acima da media 
+#pratica 44 maior e menor acima da media 
 numeros = [10, 5, 18, 7, 20, 3, 15, 12, 25, 8]
 soma = 0 
 maior_media = numeros[0]
@@ -628,7 +628,7 @@ for i in range(len(numeros)):
             p_menor = i
 print(media, maior_media, p_maior, menor_media, p_menor, qtd)
 
-#pratica 44 grupo filtado + none
+#pratica 45 grupo filtado + none
 numeros = [7, 22, 4, 18, 31, 9, 25, 12, 3]
 maior_par = 0
 p_par = 0
@@ -649,7 +649,7 @@ for i in range(len(numeros)):
             m_par = i
 print(maior_par, p_par, menor_par, m_par, qtd)
 
-#pratica  45 maior e menor dos numeros impares
+#pratica 46 maior e menor dos numeros impares
 numeros = [16, 7, 21, 4, 13, 30, 9, 18, 5]
 maior_impar = 0
 p_maior = 0
@@ -673,7 +673,7 @@ for i in range(len(numeros)):
 print(maior_impar, p_maior, menor_impar,
       p_menor, soma, qtd)
 
-#pratica 46 media dos pares
+#pratica 47 media dos pares
 numeros = [8, 5, 12, 7, 20, 3, 14, 9, 6]
 soma = 0
 qtd = 0 
@@ -684,7 +684,7 @@ for numero in numeros:
 media = soma / qtd
 print(soma, qtd, media)
 
-#pratica 47 numeros acima da media 
+#pratica 48 numeros acima da media 
 numeros = [6, 14, 9, 21, 5, 18, 11, 25, 8]
 soma = 0 
 media = 0
@@ -707,7 +707,7 @@ for i in range(len(numeros)):
             p_media = i
 print(media, soma_acima, qtd, maior_acima, p_media)
 
-#pratica 48 nivel acima 
+#pratica 49 nivel acima 
 numeros = [16, 7, 24, 9, 12, 31, 5, 18, 27, 10]
 media = 0
 qtd_acima = 0
@@ -730,7 +730,7 @@ for i in range(len(numeros)):
             p_maior = i
 print(media, qtd_acima, soma_acima, maior_media, p_maior)
 
-#pratica 49  vamos subir um pouquinho 
+#pratica 50  vamos subir um pouquinho 
 numeros = [22, 7, 14, 31, 9, 18, 5, 26, 11, 20]
 soma = 0
 qtd = 0
@@ -753,7 +753,7 @@ for i in range(len(numeros)):
             p_media = i
 print(media, qtd, soma_abaixo, menor_media, p_media)
 
-#pratica 50 fechando um bloco importante 
+#pratica 51 fechando um bloco importante 
 numeros = [15, 8, 23, 4, 18, 31, 7, 12, 26, 9, 20]
 soma = 0 
 qtd_par = 0
@@ -783,7 +783,7 @@ for i in range(len(numeros)):
             p_menor = i
 print(media, qtd_par, soma_par, maior_p, p_par, menor_p, p_menor)
 
-#pratica 51 agora quero ver adaptacao
+#pratica 52 agora quero ver adaptacao
 numeros = [13, 4, 22, 17, 8, 29, 6, 15, 24, 11]
 soma = 0
 media = None
@@ -811,7 +811,7 @@ for i in range(len(numeros)):
             p_abaixo = i
 print(media, qtd_acima, qtd_abaixo, soma_acima, soma_abaixo, maior_abaixo, p_abaixo)
 
-#pratica 51 conceito : Dicionarios
+#pratica 53 conceito : Dicionarios
 aluno = {
     "nome": "Carlos",
     "idade": 20,
@@ -821,7 +821,7 @@ print(aluno["nome"])
 print(aluno["idade"])
 print(aluno["nota"])
 
-#pratica 52
+#pratica 54
 aluno = {
     "nome": "Carlos",
     "idade": 20,
@@ -832,7 +832,7 @@ aluno["nota"] = 9.0
 print(aluno["idade"], aluno["nota"])
 print(aluno)
 
-#pratcia 53 adicionado uma informacao
+#pratcia 55 adicionado uma informacao
 aluno = {
     "nome": "Carlos",
     "idade": 21,
@@ -840,7 +840,7 @@ aluno = {
 }
 aluno["curso"] = "Python"
 print(aluno)
-#pratica 54
+#pratica 56
 aluno = {
     "nome": "Carlos",
     "idade": 21,
@@ -849,7 +849,7 @@ aluno = {
 }
 del aluno["idade"]
 print(aluno)
-#pratica 55 
+#pratica 57 
 aluno = {
     "nome": "Carlos",
     "idade": 20,
@@ -861,7 +861,7 @@ aluno["curso"] = "Python"
 del aluno["idade"]
 print(aluno)
 
-#pratica 56
+#pratica 58
 aluno = {
     "nome": "Ana",
     "idade": 22,
@@ -871,7 +871,7 @@ aluno = {
 for chave in aluno:
     print(chave, aluno[chave])
 
-#pratica 57 agora vamos filtar
+#pratica 59 agora vamos filtar
 alunos = {
     "Ana": 8.5,
     "Carlos": 6.0,
@@ -882,7 +882,7 @@ for chave in alunos:
     if alunos[chave] >= 7:
         print(chave, alunos[chave])
 
-#pratica 58 dicionario + contador 
+#pratica 60 dicionario + contador 
 alunos = {
     "Ana": 8.5,
     "Carlos": 6.0,
@@ -899,7 +899,7 @@ for chave in alunos:
 media = soma / qtd
 print(qtd, soma, media)
 
-#pratica 59 dicionario filtro mais maior 
+#pratica 61 dicionario filtro mais maior 
 alunos = {
     "Ana": 7.5,
     "Carlos": 8.0,
@@ -920,7 +920,7 @@ for chave in alunos:
         nome = chave
 print(maior, nome, qtd, soma)
 
-#pratica 60 dicionarios + vrias informaçoes
+#pratica 62 dicionarios + vrias informaçoes
 alunos = {
     "Ana": 7.0,
     "Carlos": 5.5,
@@ -948,7 +948,7 @@ for chave in alunos:
 media = soma / len(alunos)
 print(media, qtd, soma, maior, nome, menor, nome_m)
 
-#pratica 61 dicionario mais classificação
+#pratica 63 dicionario mais classificação
 alunos = {
     "Ana": 8.5,
     "Carlos": 5.0,
@@ -964,7 +964,7 @@ for chave in alunos:
     else:
         print(chave, "Reprovado")
 
-#pratica 62 classificação + contagem
+#pratica 64 classificação + contagem
 alunos = {
     "Ana": 8.5,
     "Carlos": 5.0,
@@ -984,7 +984,7 @@ for chave in alunos:
         reprovados = reprovados + 1
 print("Aprovados:",aprovados,"Recuperacao:", recuperacao, "Reprovados:", reprovados)
 
-#pratica 63 dicionario + logica 
+#pratica 65 dicionario + logica 
 alunos = {
     "Ana": 8.5,
     "Carlos": 6.0,
@@ -1007,7 +1007,7 @@ for chave in alunos:
 media = soma_a / aprovados
 print(aprovados, recuperacao, reprovados, soma_a, media)
 
-#pratica dicionarios + logicas
+#pratica 66 dicionarios + logicas
 produtos = {
     "Arroz": 25.0,
     "Feijão": 8.5,
@@ -1036,7 +1036,7 @@ for chave in produtos:
         nome_m = chave
 print(qtd, soma, mais_c, nome, menor, nome_m)
 
-#pratica 65 dicionario + logica 
+#pratica 67 dicionario + logica 
 vendas = {
     "Ana": 1200.0,
     "Carlos": 800.0,
@@ -1073,7 +1073,7 @@ for chave in vendas:
         nome_m = chave
 print(total, media, acima_media, maior, nome, menor, nome_m, soma_a)
 
-#pratica 66 dicionario mais logica 
+#pratica 68 dicionario mais logica 
 funcionarios = {
     "Ana": 3200.0,
     "Carlos": 2800.0,
@@ -1114,7 +1114,7 @@ for chave in funcionarios:
         valor_me = funcionarios[chave]
 print(total, media, qtd_acima, soma_a, maior, valor_m, menor, valor_me, abaixo)
 
-#praica 67 dicionario  + logica
+#praica 69 dicionario  + logica
 vendas = {
     "Ana": 3200.0,
     "Carlos": 1800.0,
@@ -1154,7 +1154,7 @@ for chave in vendas:
 
 print(total, media, qtd_acima, qtd_abaixo, soma_a, maior, menor, qtd_menos)
 
-#pratica 68  dicionario + logica 
+#pratica 70 dicionario + logica 
 funcionarios = {
     "Ana": 3200.0,
     "Carlos": 1800.0,
@@ -1192,3 +1192,70 @@ for chave in funcionarios:
             soma_a = soma_a + funcionarios[chave]
 
 print(qtd_f, soma, media, maior, menor, acima_m, soma_a)
+
+#pratica 71 dicionario + logica
+estoque = {
+    "Arroz": 12,
+    "Feijão": 4,
+    "Café": 8,
+    "Macarrão": 15,
+    "Açúcar": 3,
+    "Leite": 10,
+    "Farinha": 6
+}
+qtd_m = 0
+total = 0
+maior = None
+nome = None
+menor = None 
+nome_m = None
+qtd_maior = 0
+soma = 0
+for chave in estoque:
+    total = total + estoque[chave]
+    if estoque[chave] < 7:
+        qtd_m = qtd_m + 1
+    if maior is None:
+        maior = estoque[chave]
+        nome = chave
+    elif estoque[chave] > maior:
+        maior = estoque[chave]
+        nome = chave
+    if menor is None:
+        menor = estoque[chave]
+        nome_m = chave
+    elif estoque[chave] < menor:
+        menor = estoque[chave]
+        nome_m = chave
+    if estoque[chave] >= 10:
+        qtd_maior = qtd_maior + 1
+        soma = soma + estoque[chave]
+print(qtd_m, total, maior, nome, menor, nome_m, qtd_maior, soma)
+
+#pratica 72 dicionarios + loica
+produtos = {
+    "Arroz": 25,
+    "Feijão": 12,
+    "Café": 8,
+    "Macarrão": 30,
+    "Açúcar": 5,
+    "Farinha": 18
+}
+qtd = 0
+soma = 0
+maior = None
+nome = None
+for chave in produtos:
+    if produtos[chave] >= 15:
+        qtd = qtd + 1
+        soma = soma + produtos[chave]
+        if maior is None:
+            maior = produtos[chave]
+            nome = chave
+        elif produtos[chave] > maior:
+            maior = produtos[chave]
+            nome = chave
+print(qtd, soma, maior, nome)
+
+
+
