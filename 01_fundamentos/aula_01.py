@@ -983,3 +983,26 @@ for chave in alunos:
     else:
         reprovados = reprovados + 1
 print("Aprovados:",aprovados,"Recuperacao:", recuperacao, "Reprovados:", reprovados)
+
+#pratica 63 dicionario + logica 
+alunos = {
+    "Ana": 8.5,
+    "Carlos": 6.0,
+    "João": 9.5,
+    "Maria": 5.0,
+    "Pedro": 7.0,
+    "Lucas": 4.5}
+aprovados = 0
+recuperacao = 0
+reprovados = 0
+soma_a = 0
+for chave in alunos:
+    if alunos[chave] >= 7:
+        aprovados = aprovados + 1
+        soma_a = soma_a + alunos[chave]
+    elif alunos[chave] >= 5:
+        recuperacao = recuperacao + 1
+    else:
+        reprovados = reprovados + 1
+media = soma_a / aprovados
+print(aprovados, recuperacao, reprovados, soma_a, media)
