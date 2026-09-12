@@ -1072,3 +1072,123 @@ for chave in vendas:
         menor = vendas[chave]
         nome_m = chave
 print(total, media, acima_media, maior, nome, menor, nome_m, soma_a)
+
+#pratica 66 dicionario mais logica 
+funcionarios = {
+    "Ana": 3200.0,
+    "Carlos": 2800.0,
+    "João": 4500.0,
+    "Maria": 2100.0,
+    "Pedro": 3800.0,
+    "Lucas": 1900.0
+}
+total = 0
+media = 0
+qtd_acima = 0
+soma_a = 0
+maior = None
+valor_m = None
+menor = None
+valor_me = None
+abaixo = 0
+for chave in funcionarios:
+    if funcionarios[chave] < 3000:
+        abaixo = abaixo + 1
+    total = total + funcionarios[chave]
+media = total / len(funcionarios)
+for chave in funcionarios:
+    if funcionarios[chave] > media:
+        qtd_acima = qtd_acima + 1
+        soma_a = soma_a + funcionarios[chave]
+    if maior is None:
+        maior = funcionarios[chave]
+        valor_m = funcionarios[chave]
+    elif funcionarios[chave] > maior:
+        maior = funcionarios[chave]
+        valor_m = funcionarios[chave]
+    if menor is None:
+        menor = funcionarios[chave]
+        valor_me = funcionarios[chave]
+    elif funcionarios[chave] < menor:
+        menor = funcionarios[chave]
+        valor_me = funcionarios[chave]
+print(total, media, qtd_acima, soma_a, maior, valor_m, menor, valor_me, abaixo)
+
+#praica 67 dicionario  + logica
+vendas = {
+    "Ana": 3200.0,
+    "Carlos": 1800.0,
+    "João": 4500.0,
+    "Maria": 2700.0,
+    "Pedro": 5100.0,
+    "Lucas": 1500.0,
+    "Julia": 3900.0
+}
+total = 0
+media = 0
+qtd_acima = 0
+qtd_abaixo = 0
+soma_a = 0
+maior = None
+menor = None
+qtd_menos = 0
+for chave in vendas:
+    total = total +vendas[chave]
+media = total / len(vendas)
+for chave in vendas:
+    if vendas[chave] < 2000:
+        qtd_menos = qtd_menos + 1
+    if vendas[chave] > media:
+        qtd_acima = qtd_acima + 1
+        soma_a = soma_a + vendas[chave]
+    if vendas[chave] < media:
+        qtd_abaixo = qtd_abaixo + 1
+    if maior is None:
+        maior = vendas[chave]
+    elif vendas[chave] > maior:
+        maior = vendas[chave]
+    if menor is None:
+        menor = vendas[chave]
+    elif vendas[chave] < menor:
+        menor = vendas[chave]
+
+print(total, media, qtd_acima, qtd_abaixo, soma_a, maior, menor, qtd_menos)
+
+#pratica 68  dicionario + logica 
+funcionarios = {
+    "Ana": 3200.0,
+    "Carlos": 1800.0,
+    "João": 4500.0,
+    "Maria": 2700.0,
+    "Pedro": 5100.0,
+    "Lucas": 1500.0,
+    "Julia": 3900.0,
+    "Rafael": 2300.0
+}
+qtd_f = 0
+soma = 0
+media = 0
+maior = None
+menor = None
+acima_m = 0
+soma_a = 0
+for chave in funcionarios:
+    if funcionarios[chave] >= 2500:
+        qtd_f = qtd_f + 1
+        soma = soma + funcionarios[chave]
+media = soma / qtd_f
+for chave in funcionarios:
+    if funcionarios[chave] >= 2500:
+        if maior is None:
+            maior = funcionarios[chave]
+        elif funcionarios[chave] > maior:
+            maior = funcionarios[chave]
+        if menor is None:
+            menor = funcionarios[chave]
+        elif funcionarios[chave] < menor:
+            menor = funcionarios[chave]
+        if funcionarios[chave] > media:
+            acima_m = acima_m + 1
+            soma_a = soma_a + funcionarios[chave]
+
+print(qtd_f, soma, media, maior, menor, acima_m, soma_a)
