@@ -1281,3 +1281,57 @@ for chave in vendas:
             maior = vendas[chave]
             maior_v = maior
 print(qtd_m, soma, maior)
+
+#pratica 74 dicionario + logica 
+alunos = {
+    "João": 7.5,
+    "Maria": 9.0,
+    "Carlos": 5.5,
+    "Ana": 8.0,
+    "Pedro": 4.5,
+    "Lucas": 6.5
+}
+qtd_a = 0
+soma = 0 
+media = 0
+maior = None
+nota = 0
+for chave in alunos:
+    if alunos[chave] >= 6:
+        qtd_a = qtd_a + 1
+        soma = soma + alunos[chave]
+        if maior is None:
+            maior = alunos[chave]
+            nota = alunos[chave]
+        elif alunos[chave ] > maior:
+            maior = alunos[chave]
+            nota = alunos[chave]
+media = soma / qtd_a
+print(qtd_a, soma, media, maior, nota)
+
+#pratica dicionari + logica 
+funcionarios = {
+    "João": 2800,
+    "Maria": 3500,
+    "Carlos": 2200,
+    "Ana": 4100,
+    "Pedro": 1900,
+    "Lucas": 3200
+}
+qtd = 0 
+soma = 0 
+media = 0 
+nome = None
+salario = None
+for chave in funcionarios:
+    if funcionarios[chave] >= 3000:
+        qtd = qtd + 1
+        soma = soma + funcionarios[chave]
+        if salario is None:
+            nome = chave
+            salario = funcionarios[chave]
+        elif funcionarios[chave] > salario:
+            nome = chave
+            salario = funcionarios[chave]
+media = soma / qtd
+print(qtd, soma, media, nome, salario)
