@@ -1309,7 +1309,7 @@ for chave in alunos:
 media = soma / qtd_a
 print(qtd_a, soma, media, maior, nota)
 
-#pratica dicionari + logica 
+#pratica 75 dicionari + logica 
 funcionarios = {
     "João": 2800,
     "Maria": 3500,
@@ -1335,3 +1335,84 @@ for chave in funcionarios:
             salario = funcionarios[chave]
 media = soma / qtd
 print(qtd, soma, media, nome, salario)
+
+#pratica 76 Dicionario mais logica 
+produtos = {
+    "Arroz": 25.0,
+    "Feijão": 12.0,
+    "Café": 18.0,
+    "Macarrão": 30.0,
+    "Açúcar": 8.0,
+    "Farinha": 15.0
+}
+qtd = 0 
+soma = 0 
+media = 0
+nome = None
+maior_p = None
+for chave in produtos:
+    if produtos[chave] >= 15:
+        qtd = qtd + 1
+        soma = soma +produtos[chave]
+        if maior_p is None:
+            maior_p = produtos[chave]
+            nome = chave
+        elif produtos[chave] > maior_p:
+            maior_p = produtos[chave]
+            nome = chave 
+media = soma / qtd
+print(qtd, soma, media, nome, maior_p)
+
+#pratica 77
+vendas = {
+    "João": 1200,
+    "Maria": 3500,
+    "Carlos": 1800,
+    "Ana": 4200,
+    "Pedro": 2700,
+    "Lucas": 900
+}
+qtd = 0
+soma = 0 
+media = 0
+menor = None
+nome = None
+for chave in vendas:
+    if vendas[chave] < 2000:
+        qtd = qtd + 1
+        soma = soma + vendas[chave]
+        if menor is None:
+            menor = vendas[chave]
+            nome = chave
+        elif vendas[chave] < menor:
+            menor = vendas[chave]
+            nome = chave
+media = soma / qtd
+print(qtd, soma, media, menor, nome)
+
+#pratica 78 dicionario mais logica
+notas = {
+    "João": 8.5,
+    "Maria": 6.0,
+    "Carlos": 9.5,
+    "Ana": 5.0,
+    "Pedro": 7.0,
+    "Lucas": 4.5
+}
+qtd = 0 
+soma = 0
+media = 0
+menor = None
+nome = None
+for chave in notas:
+    if notas[chave] < 7:
+        qtd = qtd + 1 
+        soma = soma + notas[chave]
+        if menor is None:
+            menor = notas[chave]
+            nome = chave 
+        elif notas[chave] < menor:
+            menor = notas[chave]
+            nome = chave
+media = soma / qtd 
+print(qtd, soma, media, menor, nome)
