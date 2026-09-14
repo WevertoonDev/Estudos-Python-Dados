@@ -1232,7 +1232,7 @@ for chave in estoque:
         soma = soma + estoque[chave]
 print(qtd_m, total, maior, nome, menor, nome_m, qtd_maior, soma)
 
-#pratica 72 dicionarios + loica
+#pratica 72 dicionarios + logica
 produtos = {
     "Arroz": 25,
     "Feijão": 12,
@@ -1257,5 +1257,27 @@ for chave in produtos:
             nome = chave
 print(qtd, soma, maior, nome)
 
-
-
+#pratica 73
+vendas = {
+    "João": 2500,
+    "Maria": 1800,
+    "Carlos": 3200,
+    "Ana": 2100,
+    "Pedro": 1400,
+    "Lucas": 2900
+}
+qtd_m = 0
+soma = 0
+maior = None
+maior_v = None
+for chave in vendas:
+    if vendas[chave] > 2000:
+        qtd_m = qtd_m + 1
+        soma = soma + vendas[chave]
+        if maior is None:
+            maior = vendas[chave]
+            maior_v = vendas[chave]
+        elif vendas[chave] > maior:
+            maior = vendas[chave]
+            maior_v = maior
+print(qtd_m, soma, maior)
