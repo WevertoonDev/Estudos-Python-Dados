@@ -1616,3 +1616,121 @@ for chave in notas:
                 maior = notas[chave]
                 nome = chave
 print(qtd, soma, media, qtd_m, maior, nome)
+
+#pratica 86 filtro + media + menor valor
+funcionarios = {
+    "João": 2800,
+    "Maria": 3500,
+    "Carlos": 2200,
+    "Ana": 4100,
+    "Pedro": 3000,
+    "Lucas": 1800,
+    "Julia": 3900
+}
+qtd = 0 
+soma = 0
+media = 0
+qtd_a = 0
+menor = None
+nome = None
+for chave in funcionarios:
+    if funcionarios[chave] >= 2500:
+        qtd = qtd + 1
+        soma = soma +funcionarios[chave]
+media = soma / qtd 
+for chave in funcionarios:
+    if funcionarios[chave] >= 2500:
+        if funcionarios[chave] < media:
+            qtd_a = qtd_a + 1
+            if menor is None:
+                menor = funcionarios[chave]
+                nome = chave
+            elif funcionarios[chave] < menor:
+                menor = funcionarios[chave]
+                nome = chave
+print(qtd, soma, media, qtd_a, menor, nome)
+
+#pratica 87 filtro + media + extremos
+produtos = {
+    "Arroz": 25,
+    "Feijão": 18,
+    "Café": 32,
+    "Macarrão": 12,
+    "Açúcar": 20,
+    "Farinha": 15,
+    "Leite": 28
+}
+qtd = 0
+soma = 0 
+media = 0
+qtd_a = 0
+maior = None
+nome = None
+menor = None
+nome_m = None
+for chave in produtos:
+    if produtos[chave] >= 18:
+        qtd = qtd + 1
+        soma = soma + produtos[chave]
+media = soma / qtd
+for chave in produtos:
+    if produtos[chave] >= 18:
+        if produtos[chave] > media:
+            qtd_a = qtd_a + 1
+        if maior is None:
+            maior = produtos[chave]
+            nome = chave
+        elif produtos[chave] > maior:
+            maior = produtos[chave]
+            nome = chave
+        if menor is None:
+            menor = produtos[chave]
+            nome_m = chave
+        elif produtos[chave] < menor:
+                menor = produtos[chave]
+                nome_m = chave
+print(qtd, soma, media, qtd_a, maior, nome, menor, nome_m)
+
+#pratica 88 filtro mais media mais contagem
+vendas = {
+    "João": 1200,
+    "Maria": 3500,
+    "Carlos": 2800,
+    "Ana": 1900,
+    "Pedro": 4200,
+    "Lucas": 2600,
+    "Julia": 1700
+}
+qtd = 0
+soma = 0
+media = 0
+qtd_a = 0
+qtd_b = 0
+maior = None
+nome = None
+menor = None
+nome_m = None
+for chave in vendas:
+    if vendas[chave] >= 2000:
+        qtd = qtd + 1
+        soma = soma + vendas[chave]
+media = soma / qtd
+for chave in vendas:
+    if vendas[chave] >= 2000:
+        if vendas[chave] > media:
+            qtd_a = qtd_a + 1
+        if vendas[chave] < media:
+            qtd_b = qtd_b + 1
+        if maior is None:
+            maior = vendas[chave]
+            nome = chave
+        elif vendas[chave] > maior:
+            maior = vendas[chave]
+            nome = chave
+        if menor is None:
+            menor = vendas[chave]
+            nome_m = chave
+        elif vendas[chave] < menor:
+            menor = vendas[chave]
+            nome_m = chave
+print(qtd, soma, media, qtd_a, qtd_b, maior, nome, menor, nome_m)
