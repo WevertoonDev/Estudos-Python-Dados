@@ -1910,3 +1910,144 @@ for chave in vendas:
             nome_m = chave
 qtd_d = maior - menor
 print(qtd, soma, media, maior, nome, menor, nome_m, qtd_d)
+
+#pratica 93 filtro mais analise completa 
+alunos = {
+    "João": 5.0,
+    "Maria": 8.5,
+    "Carlos": 6.0,
+    "Ana": 9.5,
+    "Pedro": 7.0,
+    "Lucas": 4.5,
+    "Julia": 8.0
+}
+qtd = 0
+soma = 0
+media = 0
+qtd_a = 0
+qtd_b = 0
+maior = None
+nome = None
+menor = None
+nome_m = None
+dif = None
+for chave in alunos:
+    if alunos[chave] >= 6:
+        qtd = qtd + 1
+        soma = soma + alunos[chave]
+media = soma / qtd
+for chave in alunos:
+    if alunos[chave] >= 6:
+        if alunos[chave] > media:
+            qtd_a = qtd_a + 1
+        if alunos[chave] < media:
+            qtd_b = qtd_b + 1
+        if maior is None:
+            maior = alunos[chave]
+            nome = chave
+        elif alunos[chave] > maior:
+            maior = alunos[chave]
+            nome = chave
+        if menor is None:
+            menor = alunos[chave]
+            nome_m = chave
+        elif alunos[chave] < menor:
+            menor = alunos[chave]
+            nome_m = chave
+dif = maior - menor
+print(qtd, soma, media, qtd_a, qtd_b, maior, nome, menor, nome_m, dif)
+
+#pratica 94 mudando o tipo de analise 
+funcionarios = {
+    "João": 2400,
+    "Maria": 3200,
+    "Carlos": 2800,
+    "Ana": 4500,
+    "Pedro": 2600,
+    "Lucas": 1900,
+    "Julia": 3700
+}
+qtd = 0
+soma = 0
+media  = 0
+qtd_m = 0
+qtd_a = 0
+maior = None
+nome = None
+menor = None
+nome_m = None
+dif = None
+for chave in funcionarios:
+    if funcionarios[chave] >= 2500:
+        qtd = qtd + 1
+        soma = soma + funcionarios[chave]
+media = soma / qtd
+for chave in funcionarios:
+    if funcionarios[chave] >= 2500:
+        if funcionarios[chave] > media:
+            qtd_a = qtd_a + 1
+        if funcionarios[chave] == media:
+            qtd_m = qtd_m + 1
+        if maior is None:
+            maior = funcionarios[chave]
+            nome = chave
+        elif  funcionarios[chave] > maior:
+            maior = funcionarios[chave]
+            nome = chave
+        if menor is None:
+            menor = funcionarios[chave]
+            nome_m = chave
+        elif funcionarios[chave] < menor:
+            menor = funcionarios[chave]
+            nome_m = chave
+dif = maior - menor
+print( qtd, soma, media, qtd_m, qtd_a, maior, nome, menor, nome_m, dif)
+
+#pratica 95 revisao de logica 
+vendas = {
+    "João": 1200,
+    "Maria": 2800,
+    "Carlos": 3500,
+    "Ana": 1800,
+    "Pedro": 4200,
+    "Lucas": 2500,
+    "Julia": 3100
+}
+qtd = 0
+soma = 0
+media = 0
+qtd_a = 0
+qtd_b = 0
+qtd_i = 0
+maior = None
+nome = None
+menor = None
+nome_m = None
+dif = None
+for chave in vendas:
+    if vendas[chave] >= 2500:
+        qtd = qtd + 1
+        soma = soma + vendas[chave]
+media = soma / qtd 
+for chave in vendas:
+    if vendas[chave] >= 2500:
+        if vendas[chave] > media:
+            qtd_a = qtd_a + 1
+        if vendas[chave] < media:
+            qtd_b = qtd_b + 1
+        if vendas[chave] == media:
+            qtd_i = qtd_i + 1
+        if maior is None:
+            maior = vendas[chave]
+            nome = chave
+        elif vendas[chave] > maior:
+            maior = vendas[chave]
+            nome = chave
+        if menor is None:
+            menor = vendas[chave]
+            nome_m = chave
+        elif vendas[chave] < menor:
+            menor = vendas[chave]
+            nome_m = chave
+dif = maior - menor
+print(qtd, soma, media, qtd_a, qtd_b, qtd_i, maior, nome, menor, nome_m, dif)
