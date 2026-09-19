@@ -4,4 +4,4 @@ valor = float(input("Qual o valor da compra: "))
 if idade >= 18 and valor >= 100 or idade < 18:
     print("Você tem direito ao desconto.")
 else:
-    print("Você não tem direirto ao desconto")
+    print("Você não tem direito ao desconto")
