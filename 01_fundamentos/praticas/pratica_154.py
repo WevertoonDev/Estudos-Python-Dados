@@ -6,7 +6,7 @@ def classificar_compra(valor):
         return("Compra normal")
 resultado = classificar_compra(valor = 350)
 print(resultado)
-
+#pratica 154 tentativa 2
 def classificar_idade(idade):
     if idade >= 18:
         return("Adulto")

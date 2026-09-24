@@ -8,4 +8,4 @@ def analisar_numeros(lista):
             qtd = qtd + 1
     return soma 
 resultado = analisar_numeros([5, 12, 8, 20, 15])
-print(resultado,)
+print(resultado)
