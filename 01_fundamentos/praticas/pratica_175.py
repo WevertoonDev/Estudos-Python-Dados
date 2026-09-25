@@ -1,5 +1,5 @@
 #pratica 175
-def calcular_dobro(nuemro):
+def calcular_dobro(numero):
     return nuemro * 2
 def analisar_numero(numero):
     resultado = calcular_dobro(numero)
