@@ -1,6 +1,6 @@
 #pratica 175
 def calcular_dobro(numero):
-    return nuemro * 2
+    return numero * 2
 def analisar_numero(numero):
     resultado = calcular_dobro(numero)
     if resultado >= 40:
