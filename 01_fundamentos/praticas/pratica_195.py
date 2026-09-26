@@ -13,7 +13,7 @@ def analisar_vendas(lista):
            menor = numero
         elif numero < menor:
             menor = numero
-            soma = soma + numero
+        soma = soma + numero
     dif = maior - menor
     return dif
 def classificar_vendas(lista):
