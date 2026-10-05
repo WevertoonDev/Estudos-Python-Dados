@@ -21,7 +21,10 @@ def analisar_lista(numeros):
                 maior_i = numero
             elif numero > maior_i:
                 maior_i = numero
-    media = soma_t / qtd_t
+    if qtd_t > 0:
+        media = soma_t / qtd_t
+    else:
+        media = None
     return qtd_p, qtd_n, soma_p, maior_i, media
 try:
     n1 = int(input("Digite um numero: "))
