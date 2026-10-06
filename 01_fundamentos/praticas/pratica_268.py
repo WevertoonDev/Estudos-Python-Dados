@@ -3,22 +3,25 @@ def analisar_numeros(numeros):
     qtd_p = 0
     qtd_n = 0
     soma = 0
-    qtd_pa = 0
     maior = None
+    menor = None
     for numero in numeros:
-        if maior is None:
-            maior = numero
-        elif numero > maior:
-            maior = numero
         if numero > 0:
             qtd_p = qtd_p + 1
         if numero < 0:
             qtd_n = qtd_n + 1
+            if menor is None:
+                menor = numero
+            elif numero < menor:
+                menor = numero
         if numero % 2 == 0:
-            qtd_pa = qtd_pa + 1
-        if numero / 3:
+            if maior is None:
+                maior = numero
+            elif numero > maior:
+                maior = numero
+        else:
             soma = soma + numero
-    return qtd_p, qtd_n, soma, qtd_pa, maior
+    return qtd_p, qtd_n, soma, maior, menor
 try:
     n1 = int(input("Digite um numero: "))
     n2 = int(input("Digite um numero: "))
