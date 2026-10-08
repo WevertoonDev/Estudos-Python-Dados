@@ -10,7 +10,7 @@ def contar_numeros(numeros):
             qtd_n = qtd_n + 1
         else:
             qtd_z = qtd_z + 1
-    resultado = {"Postivos": qtd_p,
+    resultado = {"Positivos": qtd_p,
                  "Negativos": qtd_n,
                  "Zero": qtd_z}
     return resultado
