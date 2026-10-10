@@ -15,12 +15,12 @@ def gerar_relatorio(vendas):
         elif chave["quantidade"] > maior:
             maior = chave["quantidade"]
             nome = chave["produto"]
-        if chave["preco"] > 200:
+        if total > 200:
             qtd_a = qtd_a + 1
-        resultado = {"Total_vendas": total_v,
-                     "Quantidade_produtos": qtd,
-                     "Produto_mais_vendido": nome,
-                     "Vendas_acima_200": qtd_a}
+    resultado = {"Total_vendas": total_v,
+                 "Quantidade_produtos": qtd,
+                 "Produto_mais_vendido": nome,
+                 "Vendas_acima_200": qtd_a}
     return resultado
 vendas = [
     {"produto": "Teclado", "preco": 100, "quantidade": 2},
