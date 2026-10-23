@@ -1,3 +1,4 @@
+#pratica 298
 vendas = [200, 350, 150, 500]
 total = 0
 for valor in vendas:

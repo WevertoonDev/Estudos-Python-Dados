@@ -1,3 +1,4 @@
+#pratica 299
 vendas = [200, 350, 150, 500, 700, 100]
 soma = 0
 for valor in vendas:
