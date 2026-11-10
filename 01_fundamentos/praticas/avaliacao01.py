@@ -1,7 +1,13 @@
-caixa = 5000
-vendas = 3200
-despesas = 1150
-faturamento = vendas
-novo_faturamento = faturamento - despesas
-saldo_final = novo_faturamento + caixa
-print(f"O faturamento foi R$ {faturamento:.2f}, saldo depois das despesas foi de R$ {novo_faturamento:.2f} saldo final é de R$ {saldo_final:.2f}")
+vendas = [100, 250, 100, 400, 150, 250, 500, 100]
+qtd = 0
+qtd_m = 0
+soma = 0
+indice = 0
+while indice < len(vendas):
+    if vendas[indice] == 100:
+        qtd += 1
+    if vendas[indice] >= 250:
+        qtd_m += 1
+        soma += vendas[indice]
+    indice += 1
+print(qtd, qtd_m, soma)
