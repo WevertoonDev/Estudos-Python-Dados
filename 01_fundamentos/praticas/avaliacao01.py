@@ -11,3 +11,7 @@ while indice < len(vendas):
         soma += vendas[indice]
     indice += 1
 print(qtd, qtd_m, soma)
+nome = "Weverton"
+
+print("W" in nome)
+print("a" in nome)
