@@ -17,8 +17,5 @@ for gasto in gastos:
     qtd_t += 1
     if gasto > 3000:
         qtd += 1
-        soma += gasto
-faturamento = soma
-total = qtd_t
 porcetagem = (qtd / qtd_t)* 100
 print(f"a quantidade é {qtd} e a porcetagem é {porcetagem:.2f}")
