@@ -8,4 +8,4 @@ for numeros in range(2, numero + 1):
             contador += 1
     if contador == 2:
         lista_primos.append(numeros)
-print(contador)
+print(lista_primos)
